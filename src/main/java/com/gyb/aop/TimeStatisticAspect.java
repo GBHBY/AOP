@@ -56,7 +56,7 @@ public class TimeStatisticAspect {
             log.error(tag + desc + name + "()" + "代码报错，不会执行时间" + tag);
         } finally {
             long l1 = System.currentTimeMillis();
-            log.info(tag + desc + name + "()" + "执行时间:{}毫秒" + tag, l1 - l);
+            log.info(tag + desc + name + "()" + ":::" + "执行时间:{}毫秒" + tag, l1 - l);
         }
         return proceed;
 
